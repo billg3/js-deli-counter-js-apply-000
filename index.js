@@ -5,10 +5,16 @@
 function takeANumber(currentLine, name){
 var placeInLine = currentLine.length + 1;
 var message = "Welcome, "  + name +". You are number "  + placeInLine + " in line.";
-currentLine.push(name);
+currentLine.push(name)
 return message;
 }
 
+function takeAnumber(currentLine){
+  currentline.push(wheel+1)
+  return wheel++
+
+}
+var wheel = 0 
 
 
 
@@ -34,14 +40,14 @@ if (line.length === 0){
 message = "The line is currently empty."
 }
 else{
-message = "The line is currently: "
+message = "The line is currently: " 
 for(var i = 0; i < line.length ; i++){
 if (i === 0){
 
-message = message + (i+1) + ". " + line[i];
+message = message + line[i];
 }
 else{
-message= message + ", " + (i+1) + ". " + line[i];
+message= message + ", " + line[i] ;
 }
 }
 }
